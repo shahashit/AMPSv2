@@ -1,0 +1,7 @@
+{
+  "name": "amps-website",
+  "private": true,
+  "type": "module",
+  "description": "AMPS (AutoMPS) website: static pages + one Vercel Function for the forms.",
+  "engines": { "node": ">=20" }
+}

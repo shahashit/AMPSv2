@@ -1,0 +1,228 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Home.dc.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Robotics.dc.html",
+      "destination": "/robotics.html",
+      "permanent": true
+    },
+    {
+      "source": "/Companies.dc.html",
+      "destination": "/companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/HowItWorks.dc.html",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/Services.dc.html",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/WhyAutoMPS.dc.html",
+      "destination": "/why-amps.html",
+      "permanent": true
+    },
+    {
+      "source": "/Pricing.dc.html",
+      "destination": "/programme-terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/About.dc.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/FAQ.dc.html",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/Contact.dc.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/Careers.dc.html",
+      "destination": "/careers.html",
+      "permanent": true
+    },
+    {
+      "source": "/Apply.dc.html",
+      "destination": "/apply.html",
+      "permanent": true
+    },
+    {
+      "source": "/robotics",
+      "destination": "/robotics.html",
+      "permanent": true
+    },
+    {
+      "source": "/companies",
+      "destination": "/companies.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/why-amps",
+      "destination": "/why-amps.html",
+      "permanent": true
+    },
+    {
+      "source": "/programme-terms",
+      "destination": "/programme-terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers.html",
+      "permanent": true
+    },
+    {
+      "source": "/apply",
+      "destination": "/apply.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/Kit.dc.html",
+      "destination": "/kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/People.dc.html",
+      "destination": "/people-privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/Privacy.dc.html",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/kit",
+      "destination": "/kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/people-privacy",
+      "destination": "/people-privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/Configurator.dc.html",
+      "destination": "/configurator.html",
+      "permanent": true
+    },
+    {
+      "source": "/configurator",
+      "destination": "/configurator.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "automps.eu"
+        }
+      ],
+      "destination": "https://www.automps.eu/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/(SiteHeader|SiteFooter|EnquiryForm).dc.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/(vendor|assets|_ds)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(support.js|i18n.js|i18n-dict.js|components.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    }
+  ]
+}

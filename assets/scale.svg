@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Programme formats grow from one site to a group of sites to a full network">
+  <style>
+    .hub{fill:#FA541C;stroke:#FFFFFF;stroke-width:3}
+    .site{fill:#168BC4;stroke:#FFFFFF;stroke-width:2.5}
+    .small{fill:#7CC6EC;stroke:#FFFFFF;stroke-width:2}
+    .ln{stroke:rgba(124,198,236,.55);stroke-width:2;stroke-dasharray:5 7;animation:flow 2.4s linear infinite}
+    .pulse{fill:none;stroke:#FA541C;stroke-width:2.5;transform-box:fill-box;transform-origin:center;animation:ping 2.8s ease-out infinite}
+    .sep{stroke:rgba(124,198,236,.2);stroke-width:1.5}
+    .arrow{fill:none;stroke:#7CC6EC;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    @keyframes flow{to{stroke-dashoffset:-48}}
+    @keyframes ping{0%{transform:scale(.8);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <!-- starter: one site -->
+  <circle class="pulse" cx="200" cy="150" r="30"/>
+  <circle class="hub" cx="200" cy="150" r="30"/>
+  <g class="small"><circle cx="150" cy="105" r="9"/><circle cx="250" cy="105" r="9"/><circle cx="150" cy="195" r="9"/><circle cx="250" cy="195" r="9"/></g>
+  <g class="ln"><line x1="200" y1="150" x2="150" y2="105"/><line x1="200" y1="150" x2="250" y2="105"/><line x1="200" y1="150" x2="150" y2="195"/><line x1="200" y1="150" x2="250" y2="195"/></g>
+  <path class="arrow" d="M352 150h70m-14-14 14 14-14 14"/>
+  <!-- growth: group -->
+  <g class="ln"><line x1="600" y1="150" x2="520" y2="90"/><line x1="600" y1="150" x2="690" y2="85"/><line x1="600" y1="150" x2="510" y2="205"/><line x1="600" y1="150" x2="680" y2="215"/><line x1="600" y1="150" x2="600" y2="60"/><line x1="600" y1="150" x2="600" y2="240"/></g>
+  <circle class="pulse" cx="600" cy="150" r="30" style="animation-delay:.6s"/>
+  <circle class="hub" cx="600" cy="150" r="30"/>
+  <g class="site"><circle cx="520" cy="90" r="16"/><circle cx="690" cy="85" r="16"/><circle cx="510" cy="205" r="16"/><circle cx="680" cy="215" r="16"/><circle cx="600" cy="60" r="14"/><circle cx="600" cy="240" r="14"/></g>
+  <path class="arrow" d="M778 150h70m-14-14 14 14-14 14"/>
+  <!-- network -->
+  <g class="ln">
+    <line x1="1010" y1="150" x2="930" y2="80"/><line x1="1010" y1="150" x2="1100" y2="70"/><line x1="1010" y1="150" x2="920" y2="225"/><line x1="1010" y1="150" x2="1105" y2="230"/><line x1="1010" y1="150" x2="1010" y2="45"/><line x1="1010" y1="150" x2="1010" y2="258"/><line x1="1010" y1="150" x2="900" y2="150"/><line x1="1010" y1="150" x2="1125" y2="150"/>
+    <line x1="930" y1="80" x2="1010" y2="45"/><line x1="1100" y1="70" x2="1125" y2="150"/><line x1="920" y1="225" x2="1010" y2="258"/><line x1="1105" y1="230" x2="1125" y2="150"/><line x1="900" y1="150" x2="930" y2="80"/><line x1="900" y1="150" x2="920" y2="225"/>
+  </g>
+  <circle class="pulse" cx="1010" cy="150" r="30" style="animation-delay:1.2s"/>
+  <circle class="hub" cx="1010" cy="150" r="30"/>
+  <g class="site"><circle cx="930" cy="80" r="15"/><circle cx="1100" cy="70" r="15"/><circle cx="920" cy="225" r="15"/><circle cx="1105" cy="230" r="15"/><circle cx="1010" cy="45" r="13"/><circle cx="1010" cy="258" r="13"/><circle cx="900" cy="150" r="13"/><circle cx="1125" cy="150" r="13"/></g>
+  <g class="small"><circle cx="965" cy="62" r="7"/><circle cx="1060" cy="55" r="7"/><circle cx="1140" cy="110" r="7"/><circle cx="1140" cy="192" r="7"/><circle cx="1060" cy="250" r="7"/><circle cx="962" cy="246" r="7"/><circle cx="886" cy="190" r="7"/><circle cx="886" cy="110" r="7"/></g>
+</svg>

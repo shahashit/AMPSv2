@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Photos, video, movement, time and diagnostics flow into AI, which produces insight, assisted repair and automation">
+  <style>
+    text{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+    .lbl{fill:#071E2D;font-weight:700;font-size:20px}
+    .sub{fill:#51677A;font-size:15px}
+    .wlbl{fill:#FFFFFF;font-weight:700;font-size:20px}
+    .wsub{fill:#C7D3DC;font-size:15px}
+    .chip{fill:#FFFFFF;stroke:rgba(7,30,45,.14);stroke-width:1.5}
+    .ico{fill:#E8F3FA;stroke:#168BC4;stroke-width:2}
+    .link{fill:none;stroke:#168BC4;stroke-width:2.5;stroke-dasharray:7 9;animation:flow 2.2s linear infinite}
+    .out{fill:#071E2D}
+    .core{fill:#071E2D;stroke:#7CC6EC;stroke-width:3}
+    .halo{fill:none;stroke:#168BC4;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ping 3s ease-out infinite}
+    .spin{fill:none;stroke:#7CC6EC;stroke-width:2;stroke-dasharray:3 10;transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite}
+    .g{stroke:#168BC4;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .d2{animation-delay:.4s}.d3{animation-delay:.8s}.d4{animation-delay:1.2s}.d5{animation-delay:1.6s}
+    @keyframes flow{to{stroke-dashoffset:-64}}
+    @keyframes ping{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <!-- inputs -->
+  <g>
+    <rect class="chip" x="10" y="26" width="270" height="76" rx="10"/><circle class="ico" cx="52" cy="64" r="22"/>
+    <path class="g" d="M41 57h6l3-4h6l3 4h6v14H41z"/><circle class="g" cx="53" cy="64" r="4"/>
+    <text class="lbl" x="88" y="60">Photos</text><text class="sub" x="88" y="84">Before, during, after</text>
+  </g>
+  <g>
+    <rect class="chip" x="10" y="124" width="270" height="76" rx="10"/><circle class="ico" cx="52" cy="162" r="22"/>
+    <rect class="g" x="40" y="154" width="18" height="16" rx="2"/><path class="g" d="M58 160l7-4v12l-7-4"/>
+    <text class="lbl" x="88" y="158">Video</text><text class="sub" x="88" y="182">Smart glasses, hands-free</text>
+  </g>
+  <g>
+    <rect class="chip" x="10" y="222" width="270" height="76" rx="10"/><circle class="ico" cx="52" cy="260" r="22"/>
+    <path class="g" d="M44 270c0-8 4-10 6-14l2-8m0 0l4 10m-4-10l-6 4m10 6l4-6"/>
+    <text class="lbl" x="88" y="256">Movement</text><text class="sub" x="88" y="280">Hands, tools, sequence</text>
+  </g>
+  <g>
+    <rect class="chip" x="10" y="320" width="270" height="76" rx="10"/><circle class="ico" cx="52" cy="358" r="22"/>
+    <circle class="g" cx="52" cy="358" r="11"/><path class="g" d="M52 351v7l5 3"/>
+    <text class="lbl" x="88" y="354">Time</text><text class="sub" x="88" y="378">Per step, vs OEM times</text>
+  </g>
+  <g>
+    <rect class="chip" x="10" y="418" width="270" height="76" rx="10"/><circle class="ico" cx="52" cy="456" r="22"/>
+    <path class="g" d="M40 458h6l3-8 5 16 4-12 3 4h6"/>
+    <text class="lbl" x="88" y="452">Diagnostics</text><text class="sub" x="88" y="476">Fault paths, calibrations</text>
+  </g>
+  <!-- links in -->
+  <path class="link" d="M280 64 C360 64 360 270 430 270"/>
+  <path class="link d2" d="M280 162 C350 162 360 270 430 270"/>
+  <path class="link d3" d="M280 260 L430 270"/>
+  <path class="link d4" d="M280 358 C350 358 360 270 430 270"/>
+  <path class="link d5" d="M280 456 C360 456 360 270 430 270"/>
+  <!-- AI core -->
+  <circle class="halo" cx="500" cy="270" r="78"/>
+  <circle class="spin" cx="500" cy="270" r="92"/>
+  <circle class="core" cx="500" cy="270" r="74"/>
+  <text x="500" y="264" text-anchor="middle" style="fill:#FFFFFF;font-weight:800;font-size:34px">AI</text>
+  <text x="500" y="294" text-anchor="middle" style="fill:#7CC6EC;font-size:14px;font-weight:700;letter-spacing:.12em">ANONYMISED</text>
+  <!-- links out -->
+  <path class="link" d="M574 270 C630 270 630 120 686 120"/>
+  <path class="link d2" d="M574 270 L686 270"/>
+  <path class="link d3" d="M574 270 C630 270 630 420 686 420"/>
+  <!-- outputs -->
+  <g><rect class="out" x="686" y="72" width="264" height="96" rx="10"/><text class="wlbl" x="708" y="112">Insight</text><text class="wsub" x="708" y="138">Repair times, bottlenecks</text></g>
+  <g><rect class="out" x="686" y="222" width="264" height="96" rx="10" style="fill:#168BC4"/><text class="wlbl" x="708" y="262">Assisted repair</text><text class="wsub" x="708" y="288" style="fill:#E8F3FA">Guidance, remote experts</text></g>
+  <g><rect class="out" x="686" y="372" width="264" height="96" rx="10"/><text class="wlbl" x="708" y="412">Automation</text><text class="wsub" x="708" y="438">Partner tools, physical AI</text></g>
+</svg>

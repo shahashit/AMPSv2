@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="A modern electrified vehicle with cameras, radar, sensors, high-voltage battery, electric drive and connected electronics">
+  <style>
+    .body{fill:url(#bodyGrad);stroke:#7CC6EC;stroke-width:2.5}
+    .glass{fill:rgba(124,198,236,.18);stroke:#7CC6EC;stroke-width:1.5}
+    .wheel{fill:#04131D;stroke:#7CC6EC;stroke-width:3}
+    .rim{fill:none;stroke:#3DA2D4;stroke-width:2}
+    .bus{fill:none;stroke:#5BB8E6;stroke-width:2;stroke-dasharray:6 8;animation:flow 2.4s linear infinite}
+    .hv{fill:rgba(250,84,28,.22);stroke:#FA541C;stroke-width:2.5}
+    .hvline{fill:none;stroke:#FA541C;stroke-width:2.5;stroke-dasharray:4 7;animation:flow 1.6s linear infinite}
+    .node{fill:#071E2D;stroke:#7CC6EC;stroke-width:2.5}
+    .ring{fill:none;stroke:#7CC6EC;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ping 2.6s ease-out infinite}
+    .ringo{fill:none;stroke:#FA541C;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ping 2.6s ease-out infinite}
+    .num{fill:#FFFFFF;font:700 17px system-ui,-apple-system,Segoe UI,Arial,sans-serif;text-anchor:middle;dominant-baseline:central}
+    .beam{fill:url(#beam);opacity:.55;animation:sweep 3.2s ease-in-out infinite;transform-origin:842px 300px}
+    .ground{stroke:rgba(124,198,236,.25);stroke-width:2}
+    .d2{animation-delay:.5s}.d3{animation-delay:1s}.d4{animation-delay:1.5s}.d5{animation-delay:2s}.d6{animation-delay:.25s}
+    @keyframes flow{to{stroke-dashoffset:-56}}
+    @keyframes ping{0%{transform:scale(.6);opacity:.95}80%{opacity:0}100%{transform:scale(2.4);opacity:0}}
+    @keyframes sweep{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E4466"/><stop offset="1" stop-color="#071E2D"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7CC6EC" stop-opacity=".6"/><stop offset="1" stop-color="#7CC6EC" stop-opacity="0"/></linearGradient>
+  </defs>
+  <line class="ground" x1="40" y1="432" x2="960" y2="432"/>
+  <!-- radar / camera beam -->
+  <path class="beam" d="M842 300 L990 240 L990 360 Z"/>
+  <!-- body: generic electric crossover, original drawing -->
+  <path class="body" d="M118 392 C110 352 116 322 150 306 L260 262 C300 214 360 178 452 168 L640 166 C700 168 742 196 782 236 L840 268 C876 278 896 300 900 330 L904 372 C904 386 896 394 882 394 L820 394 A72 72 0 0 0 676 394 L346 394 A72 72 0 0 0 202 394 Z"/>
+  <path class="glass" d="M292 262 C326 222 372 196 446 190 L560 188 L560 262 Z"/>
+  <path class="glass" d="M578 188 L640 188 C690 190 724 214 756 252 L764 262 L578 262 Z"/>
+  <line x1="568" y1="190" x2="568" y2="390" stroke="#3DA2D4" stroke-width="1.5" opacity=".6"/>
+  <!-- HV battery underfloor -->
+  <rect class="hv" x="300" y="360" width="380" height="26" rx="6"/>
+  <g stroke="#FA541C" stroke-width="1.5" opacity=".8"><line x1="347" y1="362" x2="347" y2="384"/><line x1="395" y1="362" x2="395" y2="384"/><line x1="442" y1="362" x2="442" y2="384"/><line x1="490" y1="362" x2="490" y2="384"/><line x1="537" y1="362" x2="537" y2="384"/><line x1="585" y1="362" x2="585" y2="384"/><line x1="632" y1="362" x2="632" y2="384"/></g>
+  <!-- HV cable to rear motor and charge port -->
+  <path class="hvline" d="M300 373 L236 373 L236 348"/>
+  <path class="hvline" d="M680 373 L748 373 L748 348"/>
+  <path class="hvline" d="M560 360 L560 300 L176 300"/>
+  <!-- data bus (CAN / Ethernet) -->
+  <path class="bus" d="M842 300 L780 300 L700 248 L560 232 L420 232 L300 300 L236 340"/>
+  <path class="bus" d="M560 232 L560 176 L452 176"/>
+  <path class="bus" d="M700 248 L760 330"/>
+  <!-- wheels -->
+  <circle class="wheel" cx="274" cy="394" r="58"/><circle class="rim" cx="274" cy="394" r="30"/><circle cx="274" cy="394" r="7" fill="#7CC6EC"/>
+  <circle class="wheel" cx="748" cy="394" r="58"/><circle class="rim" cx="748" cy="394" r="30"/><circle cx="748" cy="394" r="7" fill="#7CC6EC"/>
+  <!-- markers -->
+  <g><circle class="ring" cx="842" cy="300" r="20"/><circle class="node" cx="842" cy="300" r="20"/><text class="num" x="842" y="300">1</text></g>
+  <g><circle class="ring d2" cx="700" cy="248" r="20"/><circle class="node" cx="700" cy="248" r="20"/><text class="num" x="700" y="248">2</text></g>
+  <g><circle class="ring d3" cx="452" cy="176" r="20"/><circle class="node" cx="452" cy="176" r="20"/><text class="num" x="452" y="176">3</text></g>
+  <g><circle class="ringo d4" cx="490" cy="373" r="20"/><circle class="node" cx="490" cy="373" r="20" style="stroke:#FA541C"/><text class="num" x="490" y="373">4</text></g>
+  <g><circle class="ringo d5" cx="236" cy="348" r="20"/><circle class="node" cx="236" cy="348" r="20" style="stroke:#FA541C"/><text class="num" x="236" y="348">5</text></g>
+  <g><circle class="ringo d6" cx="176" cy="300" r="20"/><circle class="node" cx="176" cy="300" r="20" style="stroke:#FA541C"/><text class="num" x="176" y="300">6</text></g>
+  <g><circle class="ring d4" cx="560" cy="232" r="20"/><circle class="node" cx="560" cy="232" r="20"/><text class="num" x="560" y="232">7</text></g>
+</svg>
