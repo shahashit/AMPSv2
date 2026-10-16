@@ -84,10 +84,18 @@
             </a>
           </sc-for>
         </div>
-        <a href="robotics.html" style="display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:28px;min-height:280px;background:linear-gradient(160deg,#0B3A5A,#071E2D);color:#FFFFFF;text-decoration:none;" style-hover="color:#FFFFFF;">
-          <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:46px;letter-spacing:-.03em;color:#7CC6EC;line-height:1;">1 · 3 · 5 · 10</span>
-          <span style="font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7CC6EC;">The roadmap</span>
-          <span style="font-family:'Archivo',sans-serif;font-size:23px;font-weight:800;line-height:1.15;">From tablet to robotics: see how aftersales evolves, step by step →</span>
+        <a href="how-it-works.html#roadmap" style="align-self:start;display:flex;flex-direction:column;background:#071E2D;color:#FFFFFF;text-decoration:none;overflow:hidden;box-shadow:0 20px 40px rgba(4,19,29,.18);" style-hover="color:#FFFFFF;">
+          <span style="position:relative;display:block;height:190px;background:radial-gradient(420px 200px at 70% 30%,rgba(22,139,196,.35),transparent 70%),linear-gradient(160deg,#0B3A5A,#071E2D);">
+            <span aria-hidden="true" style="position:absolute;left:14px;right:14px;top:8px;height:118px;background:url(assets/vehicle-tech.svg) center/contain no-repeat;"></span>
+            <span aria-hidden="true" style="position:absolute;left:22px;right:22px;bottom:12px;display:flex;align-items:flex-end;gap:5px;height:46px;">
+              <span style="flex:1;height:30%;background:#9FD0EC;"></span><span style="flex:1;height:45%;background:#5DB4E2;"></span><span style="flex:1;height:60%;background:#168BC4;"></span><span style="flex:1;height:78%;background:#F28A5C;"></span><span style="flex:1;height:100%;background:#FA541C;"></span>
+            </span>
+          </span>
+          <span style="display:flex;flex-direction:column;gap:8px;padding:18px 22px 22px;">
+            <span style="font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7CC6EC;">The AMPS evolution · five milestones</span>
+            <span style="font-family:'Archivo',sans-serif;font-size:21px;font-weight:800;line-height:1.18;">Digitalise, capitalise, insight and AI, automate, physical AI →</span>
+            <span style="font-size:14.5px;line-height:1.5;color:#B9C9D6;">We don’t commit to a pace. We commit to the journey.</span>
+          </span>
         </a>
       </div>
     </div>
@@ -142,7 +150,7 @@ class Component extends DCLogic {
     ];
     const wide = this.state.w >= 1280; const phone = this.state.w < 640;
     return {
-      items, segs, model, wide, rowGap: phone ? '12px' : '28px', rowH: phone ? '72px' : '92px', logoH: phone ? '40px' : (this.state.w < 1500 ? '52px' : '62px'), barLang: phone ? 'none' : 'block', menuMl: phone ? 'auto' : '0', narrow: !wide, showDrawer: !wide && this.state.open,
+      items, segs, model, wide, rowGap: phone ? '12px' : '28px', rowH: phone ? '66px' : '84px', logoH: phone ? '34px' : (this.state.w < 1500 ? '42px' : '50px'), barLang: phone ? 'none' : 'block', menuMl: phone ? 'auto' : '0', narrow: !wide, showDrawer: !wide && this.state.open,
       megaOpen: wide && this.state.mega, cfgBg: a === 'config' ? '#E8F3FA' : 'transparent',
       megaBorder: this.state.mega || ['segments', 'why', 'pricing', 'people'].includes(a) ? '#168BC4' : 'transparent',
       openMega: () => this.setState({ mega: true }), closeMega: () => this.setState({ mega: false }), toggleMega: () => this.setState(s => ({ mega: !s.mega })),
