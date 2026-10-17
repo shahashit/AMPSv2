@@ -164,6 +164,16 @@
       "permanent": true
     },
     {
+      "source": "/UseCase.dc.html",
+      "destination": "/use-case-dealer-group.html",
+      "permanent": true
+    },
+    {
+      "source": "/use-case-dealer-group",
+      "destination": "/use-case-dealer-group.html",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
